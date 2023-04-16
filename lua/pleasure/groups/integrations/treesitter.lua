@@ -11,5 +11,6 @@ return function(colors)
 		["@field"] = { fg = colors.periwinkle },
 		["@property"] = { fg = colors.periwinkle },
 		["@function.builtin"] = { link = "Function" },
+		["@punctuation.bracket"] = { link = "Statement" }
 	}
 end

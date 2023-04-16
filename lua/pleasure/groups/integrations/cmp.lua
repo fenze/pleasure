@@ -1,6 +1,6 @@
 return function(colors)
 	return {
-		CmpItemAbbr = { fg = C.overlay2 },
+		CmpItemAbbr = { fg = colors.overlay2 },
 		CmpItemAbbrDeprecated = { fg = colors.red, strikethrough = true },
 		CmpItemKind = { fg = colors.jordyblue },
 		CmpItemMenu = { fg = colors.overlay0 },

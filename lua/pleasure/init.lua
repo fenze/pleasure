@@ -50,7 +50,8 @@ M.config = {
 	integrations = {
 		treesitter = true,
 		telescope = true,
-		cmp = true
+		cmp = true,
+		neoui = true
 	}
 }
 
