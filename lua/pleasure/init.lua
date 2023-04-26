@@ -14,7 +14,7 @@ function load_compiled()
 	return false
 end
 
-function compile()
+function M.compile()
 	local groups = require('pleasure.groups')(M.config)
 	local file, err = io.open(CACHE_FILE, "wb")
 
@@ -25,14 +25,14 @@ function compile()
 	local content = {
 		[[vim.o.termguicolors = true]],
 		[[vim.g.colors_name = "pleasure"]],
-		[[if vim.fn.exists"syntax_on" then vim.cmd"syntax reset" end]],
-		[[if vim.g.colors_name then vim.cmd"hi clear" end]]
+		[[if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end]],
+		[[if vim.g.colors_name then vim.cmd("hi clear") end]]
 	}
 
 	for group, spec in pairs(groups) do
 		content[#content + 1] = ('vim.api.nvim_set_hl(0,"%s",%s)'):format(
 				group, vim.inspect(spec, { newline = "", indent = "" })
-			)
+		)
 	end
 
 	local bc = string.dump(load(table.concat(content, "\n")), 0)
@@ -56,10 +56,14 @@ M.config = {
 }
 
 M.load = function()
+    for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
+		vim.api.nvim_set_hl(0, group, {})
+    end
+
 	local loaded = load_compiled()
 
 	if not loaded then
-		compile()
+		M.compile()
 		loaded = load_compiled()
 	end
 
@@ -76,7 +80,7 @@ vim.api.nvim_create_user_command("PleasureCompile", function()
 	for name, _ in pairs(package.loaded) do
 		if name:match "^pleasure" and name ~= "pleasure" then package.loaded[name] = nil end
 	end
-	compile()
+	M.compile()
 	vim.notify("pleasure (info): compiled cache!", vim.log.levels.INFO)
 	M.load()
 end, {})

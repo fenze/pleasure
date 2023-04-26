@@ -1,0 +1,5 @@
+# Pleasure Alacritty Colors
+colors:
+  primary:
+    background: '0x121212'
+    foreground: '0xC7D1FF'

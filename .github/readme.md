@@ -1,7 +1,8 @@
+<br>
 <h3 align=center>🌍 Pleasure</h3>
 
 <p align=center>
-A dark Neovim theme written in Lua. <br> 
+A dark Neovim theme written in Lua. <br>
 Includes some extra themes for Alacritty, Chrome and zsh.
 </p>
 
@@ -17,7 +18,7 @@ Includes some extra themes for Alacritty, Chrome and zsh.
   - terminal colors
   - lighter background for sidebar-like windows
   - fast load times via lua compiled bytecode
-  
+
 ## 📦 Installation
 
 Install the theme with your favorite package manager:

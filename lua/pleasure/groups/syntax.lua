@@ -1,8 +1,8 @@
 return function(colors)
 	return {
-		Comment = { fg = colors.overlay4 },
+		Comment = { fg = colors.overlay4, italic = colors.italic },
 		SpecialComment = { link = "Special" },
-		Constant = { fg = colors.melon },
+		Constant = { fg = colors.pink3 },
 		String = { fg = colors.lightgreen },
 		Character = { fg = colors.periwinkle },
 		Number = { fg = colors.peach },
@@ -14,7 +14,7 @@ return function(colors)
 		Conditional = { link = "Statement" },
 		Repeat = { fg = colors.skyblue },
 		Label = { link = "Repeat" },
-		Operator = { fg = colors.red },
+		Operator = { fg = colors.text },
 		Error = { fg = colors.red, bold = colors.bold },
 		Keyword = { fg = colors.red },
 		PreProc = { fg = colors.melon },
@@ -22,11 +22,11 @@ return function(colors)
 		Define = { link = "PreProc" },
 		Macro = { link = "PreProc" },
 		PreCondit = { link = "PreProc" },
-		StorageClass = { fg = colors.powderblue },
+		StorageClass = { link = "Type" },
 		Structure = { link = "Keyword" },
 		Special = { fg = colors.pink0 },
 		Question = { fg = colors.jordyblue, bg = "NONE", bold = colors.bold },
-		Type = { fg = colors.periwinkle },
+		Type = { fg = colors.powderblue },
 		Delimiter = { fg = colors.overlay3 },
 		Tag = { link = "Special" },
 		Debug = { link = "Special" },
@@ -35,6 +35,21 @@ return function(colors)
 		healthSuccess = { fg = colors.lightgreen },
 		healthWarning = { fg = colors.yellow },
 		Bold = { bold = colors.bold },
-		Italic = { italic = colors.italic }
+		Italic = { italic = colors.italic },
+
+		-- Diagnostics
+		DiagnosticError = { fg = colors.red },
+		DiagnosticWarn = { fg = colors.melon },
+		DiagnosticInfo = { fg = colors.skyblue },
+		DiagnosticHint = { fg = colors.icterine },
+		DiagnosticOk = { fg = colors.lightgreen },
+
+		DiagnosticUnderlineError = { sp = colors.red, undercurl = true },
+		DiagnosticUnderlineWarn = { sp = colors.melon, undercurl = true },
+		DiagnosticUnderlineInfo = { sp = colors.skyblue, undercurl = true },
+		DiagnosticUnderlineHint = { sp = colors.icterine, undercurl = true },
+		DiagnosticUnderlineOk = { sp = colors.lightgreen, undercurl = true },
+
+		DiagnosticsDeprecated = { fg = colors.red, strikethrough = true },
 	}
 end
