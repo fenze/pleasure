@@ -1,32 +1,71 @@
 return {
-	red        = "#FF80A4",
-	melon      = "#FFB2A6",
-	peach      = "#FFCBA7",
-	yellow     = "#FFE4A8",
-	flax       = "#FFF099",
-	icterine   = "#FFF98A",
+	red = {
+		'#FF80A4', '#FF8FBA', '#FF99C0'
+	},
 
-	lightgreen = "#B3FFA3",
+	green = {
+		'#A4FF80', '#BAFF8F', '#C0FF99'
+	},
 
-	babyblue   = "#88C6FF",
-	jordyblue  = "#8FBAFF",
-	periwinkle = "#ADBAFF",
-	powderblue = "#AAA8FF",
+	blue = {
+		'#80A4FF', '#8FBAFF', '#99C0FF'
+	},
 
-	pink3      = "#D69DD2",
-	pink2      = "#EBB2E0",
-	pink1      = "#F5BDE7",
-	pink0      = "#FFC7EE",
+	yellow = {
+		'#FFF980', '#FFFB8F', '#FFFB99'
+	},
 
-	text       = "#C7D1FF",
-	overlay0   = "#E6EBFA",
-	overlay1   = "#CDD6F4",
-	overlay2   = "#A4ABC1",
-	overlay3   = "#7B7F8E",
-	overlay4   = "#52545B",
-	overlay5   = "#30323F",
-	surface3   = "#393C4E",
-	surface2   = "#262730",
-	surface1   = "#1C1D21",
-	surface0   = "#121212"
+	purple = {
+		'#D980FF', '#E18FFF', '#E499FF'
+	},
+
+	pink = {
+		'#FF80CC', '#FF8FE3', '#FF99E6'
+	},
+
+	orange = {
+		'#FFC180', '#FFBF8F', '#FFC599'
+	},
+
+	azure = {
+		'#80DDFF', '#8FE1FF', '#99E4FF'
+	},
+
+	background = {
+		'#0d1117', '#1C202D', '#2A2E3B'
+	},
+
+	foreground = {
+		'#F0F6FC', '#B8BDC5', '#7F848E', '#464B53'
+	},
+
+	extra = {
+		jordyblue  = '#8FBAFF',
+		periwinkle = '#ADBAFF',
+		powderblue = '#AAA8FF'
+	},
+
+	terminal = {
+		normal = {
+			black   = '#07090C',
+			red     = '#FF80A4',
+			green   = '#A4FF80',
+			yellow  = '#FFF980',
+			blue    = '#80A4FF',
+			magenta = '#D980FF',
+			cyan    = '#80DDFF',
+			white   = '#F0F6FC'
+		},
+
+		bright = {
+			black   = '#0d1117',
+			red     = '#FF99C0',
+			green   = '#C0FF99',
+			yellow  = '#FFFB99',
+			blue    = '#99C0FF',
+			magenta = '#E499FF',
+			cyan    = '#99E4FF',
+			white   = '#FFFFFF'
+		}
+	}
 }

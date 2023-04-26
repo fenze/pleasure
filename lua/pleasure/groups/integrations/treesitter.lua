@@ -1,4 +1,4 @@
-return function(colors)
+return function(self)
 	return {
 		["@comment"] = { link = "Comment" },
 		["@error"] = { link = "Error" },
@@ -11,15 +11,16 @@ return function(colors)
 		["@type"] = { link = "Type" },
 		["@type.definition"] = { link = "Type" },
 		["@type.builtin"] = { link = "Type" },
-		["@variable"] = { fg = colors.text },
-		["@field"] = { fg = colors.periwinkle },
-		["@property"] = { fg = colors.periwinkle },
-		["@parameter"] = { fg = colors.peach },
-		["@function"] = { fg = colors.powderblue },
+		["@variable"] = { fg = self.foreground[1] },
+		["@field"] = { fg = self.extra.periwinkle },
+		["@property"] = { fg = self.extra.periwinkle },
+		["@parameter"] = { link = "Variable" },
+		["@function"] = { fg = self.blue[1] },
 		["@function.builtin"] = { link = "Function" },
-		["@function.call"] = { fg = colors.jordyblue },
-		["@punctuation.bracket"] = { fg = colors.overlay3 },
-		["@constructor.lua"] = { fg = colors.overlay3 },
+		["@function.call"] = { fg = self.extra.jordyblue },
+		["@constant.builtin"] = { link = "Constant" },
+		["@punctuation.bracket"] = { fg = self.foreground[2] },
+		["@constructor.lua"] = { fg = self.foreground[2] },
 
 		["@lsp.type.parameter"] = { link = "@parameter" },
 		["@lsp.type.type"] = { link = "@type" },

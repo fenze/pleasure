@@ -49,17 +49,10 @@ M.config = {
 	overrides = {},
 	integrations = {
 		treesitter = true,
-		telescope = true,
-		cmp = true,
-		neoui = true
 	}
 }
 
 M.load = function()
-    for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
-		vim.api.nvim_set_hl(0, group, {})
-    end
-
 	local loaded = load_compiled()
 
 	if not loaded then

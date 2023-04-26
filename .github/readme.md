@@ -48,6 +48,7 @@ colorscheme pleasure
 -- For neovim 0.7 and older
 vim.cmd[[colorscheme pleasure]]
 -- For neovim 0.8 and newer
+-- NOTE: in lazy place it in its config or in init
 vim.cmd.colorscheme "pleasure"
 ```
 
@@ -71,4 +72,32 @@ require("nvim-treesitter.configs").setup {
         additional_vim_regex_highlighting = false
     },
 }
+```
+
+## Setup example
+
+```lua
+require('lazy').setup({
+    {
+        'fenze/pleasure',
+
+        init = function()
+            vim.cmd.colorscheme "pleasure"
+        end,
+
+        opts = {
+            	transparent = true,
+                italic = true,
+                bold = true,
+                overrides = {},
+                integrations = {
+                    treesitter = true,
+                }
+        },
+
+        config = function(_, opts)
+            require('pleasure').setup(opts)
+        end
+    }
+})
 ```

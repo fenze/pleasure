@@ -1,100 +1,100 @@
 {
 	"manifest_version": 2,
-	"name": "Pleasure",
+	"name": "Pleasure Theme",
+	"description": "Clear dark colorscheme",
 	"version": "1.0",
-	"author": "fenze <contact@fenze.dev>",
-	"description": "Pleasure chrome theme",
+	"author": "Kacper Fiedorowicz <contact@fenze.dev>",
 	"theme": {
 		"colors": {
 			"frame": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"frame_inactive": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"frame_incognito": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"frame_incognito_inactive": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"background_tab": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"background_tab_inactive": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"background_tab_incognito": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"background_tab_incognito_inactive": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"bookmark_text": [
-				123,
 				127,
+				132,
 				142
 			],
 			"tab_background_text": [
-				57,
-				60,
-				78
+				127,
+				132,
+				142
 			],
 			"tab_background_text_inactive": [
-				57,
-				60,
-				78
+				127,
+				132,
+				142
 			],
 			"tab_background_text_incognito": [
-				57,
-				60,
-				78
+				127,
+				132,
+				142
 			],
 			"tab_background_text_incognito_inactive": [
-				57,
-				60,
-				78
+				127,
+				132,
+				142
 			],
 			"tab_text": [
-				164,
-				171,
-				193
+				240,
+				246,
+				252
 			],
 			"toolbar": [
-				18,
-				18,
-				18
+				13,
+				17,
+				23
 			],
 			"toolbar_button_icon": [
-				98,
-				99,
-				101
+				127,
+				132,
+				142
 			],
 			"omnibox_text": [
-				199,
-				209,
-				255
+				184,
+				189,
+				197
 			],
 			"omnibox_background": [
 				28,
-				29,
-				33
+				32,
+				45
 			]
 		}
 	}

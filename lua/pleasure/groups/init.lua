@@ -4,7 +4,7 @@ return function(config)
 
 	colors.bold = config.bold
 	colors.italic = config.italic
-	colors.bg = config.transparent and colors.surface0 or "NONE"
+	colors.bg = config.transparent and colors.background[1] or "NONE"
 
 	highlights = vim.tbl_deep_extend("force", highlights, require('pleasure.groups.editor')(colors))
 	highlights = vim.tbl_deep_extend("force", highlights, require('pleasure.groups.syntax')(colors))

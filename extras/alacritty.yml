@@ -1,5 +1,23 @@
 # Pleasure Alacritty Colors
 colors:
   primary:
-    background: '0x121212'
-    foreground: '0xC7D1FF'
+    background: '0x0d1117'
+    foreground: '0xf0f6fc'
+  normal:
+    black:   '0x07090C'
+    red:     '0xFF80A4'
+    green:   '0xA4FF80'
+    yellow:  '0xFFF980'
+    blue:    '0x80A4FF'
+    magenta: '0xD980FF'
+    cyan:    '0x80DDFF'
+    white:   '0xF0F6FC'
+  bright:
+    black:   '0x0d1117'
+    red:     '0xFF99C0'
+    green:   '0xC0FF99'
+    yellow:  '0xFFFB99'
+    blue:    '0x99C0FF'
+    magenta: '0xE499FF'
+    cyan:    '0x99E4FF'
+    white:   '0xFFFFFF'
