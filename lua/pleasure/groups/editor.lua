@@ -13,6 +13,8 @@ return function(self)
 		LineNr = { fg = self.foreground[4] },
 		MatchParen = { bold = self.bold, fg = self.red[1] },
 		Visual = { bold = self.bold, bg = self.background[3] },
-		NormalFloat = { bg = self.background[2] }
+		NormalFloat = { bg = self.background[2] },
+		Pmenu = { bg = self.background[2] },
+		PmenuSel = { bg = self.background[3], bold = self.bold }
 	}
 end

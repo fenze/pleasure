@@ -3,7 +3,7 @@ local CACHE_FILE = vim.fn.join({ vim.fn.stdpath("cache"), "pleasure.luac" }, PAT
 
 local M = {}
 
-function load_compiled()
+local function load_compiled()
 	local f = loadfile(CACHE_FILE)
 
 	if f then
@@ -20,6 +20,7 @@ function M.compile()
 
 	if not file or err then
 		vim.notify("pleasure (error): cannot write " .. CACHE_FILE .. ":\n" .. err, vim.log.levels.ERROR)
+		return
 	end
 
 	local content = {
@@ -35,7 +36,7 @@ function M.compile()
 		)
 	end
 
-	local bc = string.dump(load(table.concat(content, "\n")), 0)
+	local bc = string.dump(load(table.concat(content, "\n")), true)
 
 	file:write(bc)
 	file:close()
@@ -49,6 +50,7 @@ M.config = {
 	overrides = {},
 	integrations = {
 		treesitter = true,
+		cmp = true
 	}
 }
 
