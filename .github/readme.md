@@ -7,7 +7,7 @@ Includes some extra themes for Alacritty, Chrome and zsh.
 </p>
 
 <p align=center>
-<img src=https://user-images.githubusercontent.com/93622468/234554803-aa29913b-d635-433e-8c46-dd2058fe905e.png />
+<img src=https://user-images.githubusercontent.com/93622468/235313871-5308d98c-ab9f-48b1-98f3-f56da55ac551.png />
 </p>
 
 ## ⚡️ Requirements
