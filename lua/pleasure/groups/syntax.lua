@@ -11,6 +11,9 @@ return function(self)
 		Operator = { fg = self.foreground[2] },
 		Special = { fg = self.orange[3] },
 		Character = { link = "String" },
+		Error = { fg = self.red[1] },
+		ErrorMsg = { link = "Error" },
+		Search = { undercurl = true },
 
 		Include = { fg = self.red[1] },
 		PreProc = { link = "Include" },
@@ -24,6 +27,18 @@ return function(self)
 		healthError = { fg = self.red[1] },
 		healthSuccess = { fg = self.green[1] },
 		healthWarning = { fg = self.orange[1] },
+
+		DiagnosticError = { fg = self.red[1] },
+		DiagnosticWarn = { fg = self.orange[1] },
+		DiagnosticInfo = { fg = self.blue[1] },
+		DiagnosticHint = { fg = self.yellow[1] },
+		DiagnosticOk = { fg = self.green[1] },
+
+		DiagnosticUnderlineError = { underline = false, undercurl = true, sp = self.red[1] },
+		DiagnosticUnderlineWarn = { underline = false, undercurl = true, sp = self.orange[1] },
+		DiagnosticUnderlineInfo = { underline = false, undercurl = true, sp = self.blue[1] },
+		DiagnosticUnderlineHint = { underline = false, undercurl = true, sp = self.yellow[1] },
+		DiagnosticUnderlineOk = { underline = false, undercurl = true, sp = self.green[1] },
 
 		["@lsp.type.comment"] = { link = "@comment" },
 		["@lsp.type.enum"] = { link = "@type" },

@@ -50,7 +50,11 @@ M.config = {
 	overrides = {},
 	integrations = {
 		treesitter = true,
-		cmp = true
+		telescope = true,
+		gitsigns = true,
+		lazy = true,
+		neoui = true,
+		lspsignature = true
 	}
 }
 
@@ -65,6 +69,18 @@ M.load = function()
 	if not loaded then
 		vim.notify("pleasure (error): cannot load compiled file", vim.log.levels.ERROR)
 	end
+
+	vim.api.nvim_create_autocmd("ModeChanged", {
+		callback = function()
+			local m = vim.api.nvim_get_mode().mode
+
+			if m == "v" or m == "" or m == "Vs" or m == "vs" or m == "V" then
+				vim.api.nvim_set_hl(0, "CursorLineNr", { link = "LineNr" })
+			else
+				vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "#1C202D" , fg = "#F0F6FC" })
+			end
+		end
+	})
 end
 
 M.setup = function(config)
