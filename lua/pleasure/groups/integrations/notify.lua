@@ -13,8 +13,8 @@ return function(self)
 		NotifyDEBUGBorder = { fg = self.orange[3] },
 		NotifyDEBUGIcon = { fg = self.orange[3] },
 		NotifyDEBUGTitle = { fg = self.orange[3], italic = true },
-		NotifyTRACEBorder = { fg = self.extra.periwinkle },
-		NotifyTRACEIcon = { fg = self.extra.periwinkle },
-		NotifyTRACETitle = { fg = self.extra.periwinkle, italic = true },
+		NotifyTRACEBorder = { fg = self.extra.periwinkle[2] },
+		NotifyTRACEIcon = { fg = self.extra.periwinkle[2] },
+		NotifyTRACETitle = { fg = self.extra.periwinkle[2], italic = true },
 	}
 end

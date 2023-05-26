@@ -40,8 +40,9 @@ return {
 	},
 
 	extra = {
+		wisteria = "#C092D2",
 		jordyblue  = '#8FBAFF',
-		periwinkle = '#ADBAFF',
+		periwinkle = { '#D6DDFF', '#C2CCFF', '#ADBAFF' },
 		powderblue = '#AAA8FF'
 	},
 
