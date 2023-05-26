@@ -20,5 +20,6 @@ return function(self)
 		SignColumn = { bg = self.background[1] },
 		TabLine = { bg = self.background[2] },
 		TabLineSel = { bg = self.background[1] },
+		StatusLine = { fg = self.foreground[3] }
 	}
 end

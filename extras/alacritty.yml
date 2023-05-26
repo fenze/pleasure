@@ -4,7 +4,7 @@ colors:
     background: '0x0d1117'
     foreground: '0xf0f6fc'
   normal:
-    black:   '0x07090C'
+    black:   '0x2A2E3B'
     red:     '0xFF80A4'
     green:   '0xA4FF80'
     yellow:  '0xFFF980'
@@ -13,7 +13,7 @@ colors:
     cyan:    '0x80DDFF'
     white:   '0xF0F6FC'
   bright:
-    black:   '0x0d1117'
+    black:   '0x2A2E3B'
     red:     '0xFF99C0'
     green:   '0xC0FF99'
     yellow:  '0xFFFB99'
