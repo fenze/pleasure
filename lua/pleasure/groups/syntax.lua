@@ -31,7 +31,7 @@ return function(self)
 		DiagnosticError = { fg = self.red[1] },
 		DiagnosticWarn = { fg = self.orange[1] },
 		DiagnosticInfo = { fg = self.blue[1] },
-		DiagnosticHint = { fg = self.yellow[1] },
+		DiagnosticHint = { fg = self.yellow[3] },
 		DiagnosticOk = { fg = self.green[1] },
 
 		DiagnosticUnderlineError = { underline = false, undercurl = true, sp = self.red[1] },
@@ -40,6 +40,7 @@ return function(self)
 		DiagnosticUnderlineHint = { underline = false, undercurl = true, sp = self.yellow[1] },
 		DiagnosticUnderlineOk = { underline = false, undercurl = true, sp = self.green[1] },
 
+		Whitespace = { fg = self.background[3] },
 
 		-- Clear lsp stuff
 		["@lsp.type.comment"] = {},
