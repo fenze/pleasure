@@ -40,10 +40,11 @@ return {
 	},
 
 	extra = {
-		wisteria = "#C092D2",
-		jordyblue  = '#8FBAFF',
-		periwinkle = { '#D6DDFF', '#C2CCFF', '#ADBAFF' },
-		powderblue = '#AAA8FF'
+		dark_background = { "#0C0F15", "#0B0E13", "#0A0D11", "#090C0F" },
+		wisteria        = "#C092D2",
+		jordyblue       = '#8FBAFF',
+		periwinkle      = { '#D6DDFF', '#C2CCFF', '#ADBAFF' },
+		powderblue      = '#AAA8FF'
 	},
 
 	terminal = {

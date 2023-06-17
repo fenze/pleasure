@@ -32,7 +32,7 @@ function M.compile()
 
 	for group, spec in pairs(groups) do
 		content[#content + 1] = ('vim.api.nvim_set_hl(0,"%s",%s)'):format(
-				group, vim.inspect(spec, { newline = "", indent = "" })
+			group, vim.inspect(spec, { newline = "", indent = "" })
 		)
 	end
 
@@ -41,7 +41,6 @@ function M.compile()
 	file:write(bc)
 	file:close()
 end
-
 
 M.config = {
 	transparent = true,
@@ -54,7 +53,8 @@ M.config = {
 		gitsigns = true,
 		lazy = true,
 		neoui = true,
-		lspsignature = true
+		lspsignature = true,
+		tsrainbow = true
 	}
 }
 
@@ -77,7 +77,7 @@ M.load = function()
 			if m == "v" or m == "" or m == "Vs" or m == "vs" or m == "V" then
 				vim.api.nvim_set_hl(0, "CursorLineNr", { link = "LineNr" })
 			else
-				vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "#1C202D" , fg = "#F0F6FC" })
+				vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "#0A0D11", fg = "#F0F6FC" })
 			end
 		end
 	})

@@ -7,9 +7,10 @@ return function(self)
 		Keyword = { fg = self.red[1] },
 		Type = { fg = self.extra.powderblue },
 		String = { fg = self.green[3] },
+		Identifier = { fg = self.foreground[1] },
 		Delimiter = { fg = self.foreground[2] },
 		Operator = { fg = self.foreground[2] },
-		Special = { fg = self.red[3] },
+		Special = { fg = self.orange[3] },
 		Character = { link = "String" },
 		Error = { fg = self.red[1] },
 		ErrorMsg = { link = "Error" },
@@ -23,6 +24,16 @@ return function(self)
 		Todo = { fg = self.yellow[1] },
 		Statement = { fg = self.red[1] },
 		Function = { fg = self.blue[1] },
+
+		Folded = { fg = self.green[1], bold = true },
+		FoldColumn = { fg = self.foreground[4] },
+
+		Title = { fg = self.purple[1] },
+		Directory = { fg = self.blue[3] },
+		SpecialKey = { link = "Directory" },
+
+		Question = { link = "Folded" },
+		Conceal = { link = "FoldColumn" },
 
 		healthError = { fg = self.red[1] },
 		healthSuccess = { fg = self.green[1] },
