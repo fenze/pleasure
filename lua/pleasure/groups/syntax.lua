@@ -53,6 +53,10 @@ return function(self)
         DiagnosticUnderlineHint = { underline = false, undercurl = true, sp = self.yellow[1] },
         DiagnosticUnderlineOk = { underline = false, undercurl = true, sp = self.green[1] },
 
+        DiffAdd = { bg = self.green[3] },
+        DiffChange = { bg = self.yellow[3] },
+        DiffDelete = { bg = self.red[3] },
+
         Whitespace = { fg = self.background[3] },
 
         -- Clear lsp stuff
